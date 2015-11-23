@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 nov. 2015 11:36:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstix.dao.Inscriptions2" table="inscriptions2" catalog="abstix">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="login" type="string">
+            <column name="login" length="60" not-null="true" />
+        </property>
+        <property name="login2" type="string">
+            <column name="login2" length="15" not-null="true" />
+        </property>
+        <property name="mdpHash" type="string">
+            <column name="mdp_hash" length="30" not-null="true" />
+        </property>
+        <property name="uuidUdm" type="string">
+            <column name="uuid_udm" length="10" not-null="true" />
+        </property>
+        <property name="civilite" type="string">
+            <column name="civilite" length="5" not-null="true" />
+        </property>
+        <property name="nom" type="string">
+            <column name="nom" length="30" not-null="true" />
+        </property>
+        <property name="prenom" type="string">
+            <column name="prenom" length="30" not-null="true" />
+        </property>
+        <property name="nomjfille" type="string">
+            <column name="nomjfille" length="30" not-null="true" />
+        </property>
+        <property name="prononciation" type="string">
+            <column name="prononciation" length="30" not-null="true" />
+        </property>
+        <property name="datenaiss" type="date">
+            <column name="datenaiss" length="10" />
+        </property>
+        <property name="villenaiss" type="string">
+            <column name="villenaiss" length="20" not-null="true" />
+        </property>
+        <property name="dptnaiss" type="string">
+            <column name="dptnaiss" length="20" not-null="true" />
+        </property>
+        <property name="paysnaiss" type="string">
+            <column name="paysnaiss" length="20" not-null="true" />
+        </property>
+        <property name="nationalite" type="string">
+            <column name="nationalite" length="30" not-null="true" />
+        </property>
+        <property name="sitfam" type="string">
+            <column name="sitfam" length="20" not-null="true" />
+        </property>
+        <property name="nom1" type="string">
+            <column name="nom1" length="40" not-null="true" />
+        </property>
+        <property name="rue1" type="string">
+            <column name="rue1" length="100" not-null="true" />
+        </property>
+        <property name="cp1" type="string">
+            <column name="cp1" length="10" not-null="true" />
+        </property>
+        <property name="ville1" type="string">
+            <column name="ville1" length="30" not-null="true" />
+        </property>
+        <property name="tel1" type="string">
+            <column name="tel1" length="20" not-null="true" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="20" not-null="true" />
+        </property>
+        <property name="pays1" type="string">
+            <column name="pays1" length="30" not-null="true" />
+        </property>
+        <property name="nom2" type="string">
+            <column name="nom2" length="40" not-null="true" />
+        </property>
+        <property name="rue2" type="string">
+            <column name="rue2" length="100" not-null="true" />
+        </property>
+        <property name="cp2" type="string">
+            <column name="cp2" length="10" not-null="true" />
+        </property>
+        <property name="ville2" type="string">
+            <column name="ville2" length="30" not-null="true" />
+        </property>
+        <property name="tel2" type="string">
+            <column name="tel2" length="20" not-null="true" />
+        </property>
+        <property name="pays2" type="string">
+            <column name="pays2" length="30" not-null="true" />
+        </property>
+        <property name="connaissance" type="string">
+            <column name="connaissance" length="50" not-null="true" />
+        </property>
+        <property name="alternance" type="byte">
+            <column name="alternance" not-null="true" />
+        </property>
+        <property name="origine" type="string">
+            <column name="origine" length="10" not-null="true" />
+        </property>
+        <property name="echangeProgram" type="string">
+            <column name="echange_program" length="20" not-null="true" />
+        </property>
+        <property name="echangeProfNom" type="string">
+            <column name="echange_prof_nom" length="50" not-null="true" />
+        </property>
+        <property name="echangeProfFonction" type="string">
+            <column name="echange_prof_fonction" length="50" not-null="true" />
+        </property>
+        <property name="echangeProfEmail" type="string">
+            <column name="echange_prof_email" length="60" not-null="true" />
+        </property>
+        <property name="candiploNiveau" type="string">
+            <column name="candiplo_niveau" length="1" not-null="true" />
+        </property>
+        <property name="candiploType" type="string">
+            <column name="candiplo_type" length="20" not-null="true" />
+        </property>
+        <property name="candiploIntitule" type="string">
+            <column name="candiplo_intitule" length="50" not-null="true" />
+        </property>
+        <property name="filiere" type="string">
+            <column name="filiere" length="120" not-null="true" />
+        </property>
+        <property name="concours" type="string">
+            <column name="concours" length="50" not-null="true" />
+        </property>
+        <property name="emploi" type="string">
+            <column name="emploi" length="30" not-null="true" />
+        </property>
+        <property name="nometa" type="string">
+            <column name="nometa" length="60" not-null="true" />
+        </property>
+        <property name="rueeta" type="string">
+            <column name="rueeta" length="50" not-null="true" />
+        </property>
+        <property name="cpeta" type="string">
+            <column name="cpeta" length="10" not-null="true" />
+        </property>
+        <property name="villeeta" type="string">
+            <column name="villeeta" length="30" not-null="true" />
+        </property>
+        <property name="payseta" type="string">
+            <column name="payseta" length="20" not-null="true" />
+        </property>
+        <property name="teleta" type="string">
+            <column name="teleta" length="20" not-null="true" />
+        </property>
+        <property name="seriebac" type="string">
+            <column name="seriebac" length="30" not-null="true" />
+        </property>
+        <property name="mentionbac" type="string">
+            <column name="mentionbac" length="15" not-null="true" />
+        </property>
+        <property name="anneebac" type="string">
+            <column name="anneebac" length="10" not-null="true" />
+        </property>
+        <property name="lyceebac" type="string">
+            <column name="lyceebac" length="45" not-null="true" />
+        </property>
+        <property name="villebac" type="string">
+            <column name="villebac" length="30" not-null="true" />
+        </property>
+        <property name="paysbac" type="string">
+            <column name="paysbac" length="20" not-null="true" />
+        </property>
+        <property name="bea" type="string">
+            <column name="bea" length="11" not-null="true" />
+        </property>
+        <property name="anneesuivibac1" type="string">
+            <column name="anneesuivibac1" length="13" not-null="true" />
+        </property>
+        <property name="anneesuivibac2" type="string">
+            <column name="anneesuivibac2" length="13" not-null="true" />
+        </property>
+        <property name="anneesuivibac3" type="string">
+            <column name="anneesuivibac3" length="13" not-null="true" />
+        </property>
+        <property name="etasuivibac1" type="string">
+            <column name="etasuivibac1" length="50" not-null="true" />
+        </property>
+        <property name="etasuivibac2" type="string">
+            <column name="etasuivibac2" length="50" not-null="true" />
+        </property>
+        <property name="etasuivibac3" type="string">
+            <column name="etasuivibac3" length="50" not-null="true" />
+        </property>
+        <property name="filsuivibac1" type="string">
+            <column name="filsuivibac1" length="50" not-null="true" />
+        </property>
+        <property name="filsuivibac2" type="string">
+            <column name="filsuivibac2" length="50" not-null="true" />
+        </property>
+        <property name="filsuivibac3" type="string">
+            <column name="filsuivibac3" length="50" not-null="true" />
+        </property>
+        <property name="resultatsuivibac1" type="string">
+            <column name="resultatsuivibac1" length="12" not-null="true" />
+        </property>
+        <property name="resultatsuivibac2" type="string">
+            <column name="resultatsuivibac2" length="12" not-null="true" />
+        </property>
+        <property name="resultatsuivibac3" type="string">
+            <column name="resultatsuivibac3" length="12" not-null="true" />
+        </property>
+        <property name="moygesuivibac1" type="string">
+            <column name="moygesuivibac1" length="4" not-null="true" />
+        </property>
+        <property name="moygesuivibac2" type="string">
+            <column name="moygesuivibac2" length="4" not-null="true" />
+        </property>
+        <property name="moygesuivibac3" type="string">
+            <column name="moygesuivibac3" length="4" not-null="true" />
+        </property>
+        <property name="moyangsuivibac1" type="string">
+            <column name="moyangsuivibac1" length="4" not-null="true" />
+        </property>
+        <property name="moyangsuivibac2" type="string">
+            <column name="moyangsuivibac2" length="4" not-null="true" />
+        </property>
+        <property name="moyangsuivibac3" type="string">
+            <column name="moyangsuivibac3" length="4" not-null="true" />
+        </property>
+        <property name="suivibacBreak" type="string">
+            <column name="suivibac_break" length="65535" not-null="true" />
+        </property>
+        <property name="stages" type="binary">
+            <column name="stages" />
+        </property>
+        <property name="sejours" type="binary">
+            <column name="sejours" />
+        </property>
+        <property name="langue1" type="string">
+            <column name="langue_1" length="60" not-null="true" />
+        </property>
+        <property name="langue2" type="string">
+            <column name="langue_2" length="60" not-null="true" />
+        </property>
+        <property name="langue3" type="string">
+            <column name="langue_3" length="60" not-null="true" />
+        </property>
+        <property name="carteid" type="string">
+            <column name="carteid" length="3" not-null="true" />
+        </property>
+        <property name="attesdiplome" type="string">
+            <column name="attesdiplome" length="3" not-null="true" />
+        </property>
+        <property name="photo" type="string">
+            <column name="photo" length="50" not-null="true" />
+        </property>
+        <property name="cv" type="string">
+            <column name="cv" length="50" not-null="true" />
+        </property>
+        <property name="cvOk" type="string">
+            <column name="cv_ok" length="3" not-null="true" />
+        </property>
+        <property name="lettreMotiv" type="string">
+            <column name="lettre_motiv" length="50" not-null="true" />
+        </property>
+        <property name="motiv" type="string">
+            <column name="motiv" length="3" not-null="true" />
+        </property>
+        <property name="cheque" type="string">
+            <column name="cheque" length="3" not-null="true" />
+        </property>
+        <property name="bacPhotocopie" type="string">
+            <column name="bac_photocopie" length="3" not-null="true" />
+        </property>
+        <property name="notes3annees" type="string">
+            <column name="notes3annees" length="3" not-null="true" />
+        </property>
+        <property name="avis1" type="string">
+            <column name="avis1" length="3" not-null="true" />
+        </property>
+        <property name="avis2" type="string">
+            <column name="avis2" length="3" not-null="true" />
+        </property>
+        <property name="dossierCampusFrance" type="string">
+            <column name="dossier_campus_france" length="50" not-null="true" />
+        </property>
+        <property name="campusFrance" type="string">
+            <column name="campusFrance" length="3" not-null="true" />
+        </property>
+        <property name="dateConstitutionDossier" type="date">
+            <column name="date_constitution_dossier" length="10" />
+        </property>
+        <property name="dateDemandeConfirmationDossier" type="timestamp">
+            <column name="date_demande_confirmation_dossier" length="19" />
+        </property>
+        <property name="valide" type="byte">
+            <column name="valide" not-null="true" />
+        </property>
+        <property name="dateConfirmationDossier" type="date">
+            <column name="date_confirmation_dossier" length="10" />
+        </property>
+        <property name="abandon" type="byte">
+            <column name="abandon" not-null="true" />
+        </property>
+        <property name="abandonMotif" type="string">
+            <column name="abandon_motif" length="40" not-null="true" />
+        </property>
+        <property name="dateReceptionImprime" type="date">
+            <column name="date_reception_imprime" length="10" not-null="true" />
+        </property>
+        <property name="dossierRapporteur1" type="string">
+            <column name="dossier_rapporteur_1" length="30" not-null="true" />
+        </property>
+        <property name="dossierRapporteur2" type="string">
+            <column name="dossier_rapporteur_2" length="30" not-null="true" />
+        </property>
+        <property name="dossierNote1" type="int">
+            <column name="dossier_note_1" not-null="true" />
+        </property>
+        <property name="dossierNote2" type="int">
+            <column name="dossier_note_2" not-null="true" />
+        </property>
+        <property name="statutDossier" type="string">
+            <column name="statut_dossier" length="15" not-null="true" />
+        </property>
+        <property name="dateStatutDossier" type="date">
+            <column name="date_statut_dossier" length="10" />
+        </property>
+        <property name="notifStatutDossier" type="byte">
+            <column name="notif_statut_dossier" not-null="true" />
+        </property>
+        <property name="entretienAuditeur1" type="string">
+            <column name="entretien_auditeur_1" length="30" not-null="true" />
+        </property>
+        <property name="entretienAuditeur2" type="string">
+            <column name="entretien_auditeur_2" length="30" not-null="true" />
+        </property>
+        <property name="entretienSalle" type="string">
+            <column name="entretien_salle" length="30" not-null="true" />
+        </property>
+        <property name="entretienHeure" type="string">
+            <column name="entretien_heure" length="6" not-null="true" />
+        </property>
+        <property name="entretienNote" type="int">
+            <column name="entretien_note" not-null="true" />
+        </property>
+        <property name="dateChoixSouhaits" type="timestamp">
+            <column name="date_choix_souhaits" length="19" />
+        </property>
+        <property name="dateChoix1" type="date">
+            <column name="date_choix1" length="10" />
+        </property>
+        <property name="dateChoix2" type="date">
+            <column name="date_choix2" length="10" />
+        </property>
+        <property name="dateSession" type="date">
+            <column name="date_session" length="10" />
+        </property>
+        <property name="entretienChoixRetenu" type="string">
+            <column name="entretien_choix_retenu" length="15" not-null="true" />
+        </property>
+        <property name="dateConvocation" type="date">
+            <column name="date_convocation" length="10" />
+        </property>
+        <property name="dateNotificationConvocation" type="timestamp">
+            <column name="date_notification_convocation" length="19" />
+        </property>
+        <property name="statutEntretien" type="string">
+            <column name="statut_entretien" length="30" not-null="true" />
+        </property>
+        <property name="dateStatutEntretien" type="date">
+            <column name="date_statut_entretien" length="10" />
+        </property>
+        <property name="notifStatutEntretien" type="byte">
+            <column name="notif_statut_entretien" not-null="true" />
+        </property>
+        <property name="statutAdmission" type="string">
+            <column name="statut_admission" length="12" not-null="true" />
+        </property>
+        <property name="dateNotifAdmission" type="date">
+            <column name="date_notif_admission" length="10" />
+        </property>
+        <property name="rang" type="short">
+            <column name="rang" not-null="true" />
+        </property>
+        <property name="statutInscription" type="string">
+            <column name="statut_inscription" length="24" not-null="true" />
+        </property>
+        <property name="dateStatutInscription" type="date">
+            <column name="date_statut_inscription" length="10" />
+        </property>
+        <property name="notifStatutInscription" type="byte">
+            <column name="notif_statut_inscription" not-null="true" />
+        </property>
+        <property name="dateReceptionInscription" type="date">
+            <column name="date_reception_inscription" length="10" />
+        </property>
+        <property name="dateDerniereConsultation" type="date">
+            <column name="date_derniere_consultation" length="10" />
+        </property>
+        <property name="derniereVisiteAnticollision" type="string">
+            <column name="derniere_visite_anticollision" length="100" not-null="true" />
+        </property>
+        <property name="dateModifAdmin" type="date">
+            <column name="date_modif_admin" length="10" not-null="true" />
+        </property>
+        <property name="nomModifAdmin" type="string">
+            <column name="nom_modif_admin" length="30" not-null="true" />
+        </property>
+        <property name="statutDelete" type="byte">
+            <column name="statut_delete" not-null="true" />
+        </property>
+        <property name="unlocked" type="byte">
+            <column name="unlocked" not-null="true" />
+        </property>
+        <property name="etudiant" type="string">
+            <column name="etudiant" length="3" not-null="true" />
+        </property>
+        <property name="boursier" type="string">
+            <column name="boursier" length="3" not-null="true" />
+        </property>
+        <property name="numUdm" type="string">
+            <column name="num_UDM" length="15" not-null="true" />
+        </property>
+        <property name="mailUdm" type="string">
+            <column name="mail_UDM" length="60" not-null="true" />
+        </property>
+        <property name="mailPro" type="string">
+            <column name="mail_pro" length="60" not-null="true" />
+        </property>
+        <property name="mailProNew" type="string">
+            <column name="mail_pro_new" length="70" not-null="true" />
+        </property>
+        <property name="mailPerso" type="string">
+            <column name="mail_perso" length="60" not-null="true" />
+        </property>
+        <property name="mailPersoNew" type="string">
+            <column name="mail_perso_new" length="70" not-null="true" />
+        </property>
+        <property name="mailAutreNew" type="string">
+            <column name="mail_autre_new" length="70" not-null="true" />
+        </property>
+        <property name="noMaskedMail" type="byte">
+            <column name="no_masked_mail" not-null="true" />
+        </property>
+        <property name="promoEntree" type="string">
+            <column name="promo_entree" length="15" not-null="true" />
+        </property>
+        <property name="promo" type="string">
+            <column name="promo" length="6" not-null="true" />
+        </property>
+        <property name="optionSpCandi" type="string">
+            <column name="optionSp_candi" length="10" not-null="true" />
+        </property>
+        <property name="optionSp" type="string">
+            <column name="optionSp" length="3" not-null="true" />
+        </property>
+        <property name="td" type="string">
+            <column name="td" length="20" not-null="true" />
+        </property>
+        <property name="tp" type="string">
+            <column name="tp" length="20" not-null="true" />
+        </property>
+        <property name="gt1" type="string">
+            <column name="GT1" length="20" not-null="true" />
+        </property>
+        <property name="gt2" type="string">
+            <column name="GT2" length="20" not-null="true" />
+        </property>
+        <property name="gt3" type="string">
+            <column name="GT3" length="20" not-null="true" />
+        </property>
+        <property name="gt4" type="string">
+            <column name="GT4" length="20" not-null="true" />
+        </property>
+        <property name="gt5" type="string">
+            <column name="GT5" length="20" not-null="true" />
+        </property>
+        <property name="gt6" type="string">
+            <column name="GT6" length="20" not-null="true" />
+        </property>
+        <property name="handicap" type="string">
+            <column name="handicap" length="3" not-null="true" />
+        </property>
+        <property name="activiteRemuneree" type="string">
+            <column name="activite_remuneree" length="30" not-null="true" />
+        </property>
+        <property name="absencePerm" type="string">
+            <column name="absence_perm" length="50" not-null="true" />
+        </property>
+        <property name="absencesLongues" type="string">
+            <column name="absences_longues" length="65535" not-null="true" />
+        </property>
+        <property name="ajac" type="byte">
+            <column name="AJAC" not-null="true" />
+        </property>
+        <property name="redoublant" type="string">
+            <column name="redoublant" length="3" not-null="true" />
+        </property>
+        <property name="cursus" type="string">
+            <column name="cursus" length="80" not-null="true" />
+        </property>
+        <property name="idEnsApprenti" type="short">
+            <column name="id_ens_apprenti" not-null="true" />
+        </property>
+        <property name="matieresIntraorg" type="string">
+            <column name="matieres_intraorg" length="65535" not-null="true" />
+        </property>
+        <property name="stageFacultatif" type="char">
+            <column name="stage_facultatif" length="1" not-null="true" />
+        </property>
+        <property name="relinterDisp" type="string">
+            <column name="relinter_disp" length="1" not-null="true" />
+        </property>
+        <property name="toic" type="string">
+            <column name="TOIC" length="10" not-null="true" />
+        </property>
+        <property name="commentaire" type="string">
+            <column name="commentaire" length="65535" not-null="true" />
+        </property>
+        <property name="reponse" type="string">
+            <column name="reponse" length="65535" not-null="true" />
+        </property>
+        <property name="anneeCivileEntree" type="string">
+            <column name="annee_civile_entree" length="4" not-null="true" />
+        </property>
+        <property name="anneeCivileSortie" type="string">
+            <column name="annee_civile_sortie" length="4" not-null="true" />
+        </property>
+        <property name="anneeCivileDiplome" type="string">
+            <column name="annee_civile_diplome" length="4" not-null="true" />
+        </property>
+        <property name="motifSortie" type="char">
+            <column name="motif_sortie" length="1" not-null="true" />
+        </property>
+        <property name="photoAlu" type="string">
+            <column name="photo_alu" length="60" not-null="true" />
+        </property>
+        <property name="employeurId" type="int">
+            <column name="employeur_id" not-null="true" />
+        </property>
+        <property name="employeurSiret" type="string">
+            <column name="employeur_SIRET" length="14" not-null="true" />
+        </property>
+        <property name="employeurApe" type="string">
+            <column name="employeur_APE" length="5" not-null="true" />
+        </property>
+        <property name="employeurUrl" type="string">
+            <column name="employeur_URL" length="150" not-null="true" />
+        </property>
+        <property name="emploiFonction" type="string">
+            <column name="emploi_fonction" length="40" not-null="true" />
+        </property>
+        <property name="emploiSecteurId" type="byte">
+            <column name="emploi_secteur_id" not-null="true" />
+        </property>
+        <property name="emploiType1" type="byte">
+            <column name="emploi_type1" not-null="true" />
+        </property>
+        <property name="emploiType2" type="byte">
+            <column name="emploi_type2" not-null="true" />
+        </property>
+        <property name="emploiMotcleL" type="string">
+            <column name="emploi_motcleL" length="80" not-null="true" />
+        </property>
+        <property name="web1" type="string">
+            <column name="web1" length="150" not-null="true" />
+        </property>
+        <property name="web2" type="string">
+            <column name="web2" length="150" not-null="true" />
+        </property>
+        <property name="annuaireInfos" type="string">
+            <column name="annuaire_infos" length="1000" not-null="true" />
+        </property>
+        <property name="annuaireDiffusion" type="string">
+            <column name="annuaire_diffusion" length="65535" not-null="true" />
+        </property>
+        <property name="actionsEnsim" type="string">
+            <column name="actions_ensim" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

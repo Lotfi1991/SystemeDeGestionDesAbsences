@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="abstix" match-name="personnels"/>
+  <table-filter match-catalog="abstix" match-name="inscriptions2"/>
+  <table-filter match-catalog="abstix" match-name="etudiants_absences"/>
+  <table-filter match-catalog="abstix" match-name="enseignements"/>
+</hibernate-reverse-engineering>

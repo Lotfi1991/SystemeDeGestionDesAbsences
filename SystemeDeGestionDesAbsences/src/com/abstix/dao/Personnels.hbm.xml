@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 nov. 2015 11:36:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstix.dao.Personnels" table="personnels" catalog="abstix">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="pass" type="string">
+            <column name="pass" length="20" not-null="true" />
+        </property>
+        <property name="nosend" type="byte">
+            <column name="nosend" not-null="true" />
+        </property>
+        <property name="verrou" type="byte">
+            <column name="verrou" not-null="true" />
+        </property>
+        <property name="alias" type="string">
+            <column name="alias" length="30" not-null="true" />
+        </property>
+        <property name="civilite" type="string">
+            <column name="civilite" length="4" not-null="true" />
+        </property>
+        <property name="nom" type="string">
+            <column name="nom" length="30" not-null="true" />
+        </property>
+        <property name="prenom" type="string">
+            <column name="prenom" length="30" not-null="true" />
+        </property>
+        <property name="dateNaiss" type="date">
+            <column name="date_naiss" length="10" not-null="true" />
+        </property>
+        <property name="identifiant" type="string">
+            <column name="identifiant" length="60" not-null="true" />
+        </property>
+        <property name="harpege" type="string">
+            <column name="harpege" length="8" not-null="true" />
+        </property>
+        <property name="numInsee" type="string">
+            <column name="num_insee" length="15" not-null="true" />
+        </property>
+        <property name="photo" type="string">
+            <column name="photo" length="40" not-null="true" />
+        </property>
+        <property name="courriel" type="string">
+            <column name="courriel" length="60" not-null="true" />
+        </property>
+        <property name="adressePerso" type="string">
+            <column name="adresse_perso" length="65535" not-null="true" />
+        </property>
+        <property name="urlPerso" type="string">
+            <column name="url_perso" not-null="true" />
+        </property>
+        <property name="paysPerso" type="string">
+            <column name="pays_perso" length="30" not-null="true" />
+        </property>
+        <property name="adressePro" type="string">
+            <column name="adresse_pro" length="65535" not-null="true" />
+        </property>
+        <property name="paysPro" type="string">
+            <column name="pays_pro" length="30" not-null="true" />
+        </property>
+        <property name="telPerso1" type="string">
+            <column name="tel_perso1" length="20" not-null="true" />
+        </property>
+        <property name="telPerso2" type="string">
+            <column name="tel_perso2" length="20" not-null="true" />
+        </property>
+        <property name="telPro1" type="string">
+            <column name="tel_pro1" length="20" not-null="true" />
+        </property>
+        <property name="telPro2" type="string">
+            <column name="tel_pro2" length="20" not-null="true" />
+        </property>
+        <property name="bureau" type="string">
+            <column name="bureau" length="15" not-null="true" />
+        </property>
+        <property name="cleSalle" type="string">
+            <column name="cle_salle" length="20" not-null="true" />
+        </property>
+        <property name="courrielPro" type="string">
+            <column name="courriel_pro" length="60" not-null="true" />
+        </property>
+        <property name="courrielPro2" type="string">
+            <column name="courriel_pro2" length="60" not-null="true" />
+        </property>
+        <property name="faxPro" type="string">
+            <column name="fax_pro" length="20" not-null="true" />
+        </property>
+        <property name="urlPro" type="string">
+            <column name="url_pro" not-null="true" />
+        </property>
+        <property name="duree" type="string">
+            <column name="duree" length="15" not-null="true" />
+        </property>
+        <property name="emploiPrincipal" type="string">
+            <column name="emploi_principal" length="8" />
+        </property>
+        <property name="statut" type="string">
+            <column name="statut" length="20" />
+        </property>
+        <property name="fonction" type="string">
+            <column name="fonction" length="20" not-null="true" />
+        </property>
+        <property name="responsabilites" type="string">
+            <column name="responsabilites" length="65535" not-null="true" />
+        </property>
+        <property name="referent" type="string">
+            <column name="referent" length="40" not-null="true" />
+        </property>
+        <property name="employeur" type="string">
+            <column name="employeur" length="30" />
+        </property>
+        <property name="labo" type="byte">
+            <column name="labo" not-null="true" />
+        </property>
+        <property name="dateFin" type="date">
+            <column name="date_fin" length="10" not-null="true" />
+        </property>
+        <property name="remarquesAdmin" type="string">
+            <column name="remarques_admin" length="65535" not-null="true" />
+        </property>
+        <property name="remarquesPerso" type="string">
+            <column name="remarques_perso" length="65535" not-null="true" />
+        </property>
+        <property name="auteurModif" type="string">
+            <column name="auteur_modif" length="60" not-null="true" />
+        </property>
+        <property name="dateModif" type="date">
+            <column name="date_modif" length="10" not-null="true" />
+        </property>
+        <property name="dateConnexion" type="timestamp">
+            <column name="date_connexion" length="19" not-null="true" />
+        </property>
+        <property name="del" type="byte">
+            <column name="del" not-null="true" />
+        </property>
+        <property name="ensCompetences" type="string">
+            <column name="ens_competences" length="150" not-null="true" />
+        </property>
+        <property name="activiteEns" type="byte">
+            <column name="activite_ens" not-null="true" />
+        </property>
+        <property name="activiteRech" type="byte">
+            <column name="activite_rech" not-null="true" />
+        </property>
+        <property name="activiteAdmin" type="byte">
+            <column name="activite_admin" not-null="true" />
+        </property>
+        <property name="activiteTechn" type="byte">
+            <column name="activite_techn" not-null="true" />
+        </property>
+        <property name="activiteAutre" type="byte">
+            <column name="activite_autre" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

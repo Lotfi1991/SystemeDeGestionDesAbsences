@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 nov. 2015 11:36:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstix.dao.Enseignements" table="enseignements" catalog="abstix">
+        <id name="id" type="java.lang.Short">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="15" not-null="true" />
+        </property>
+        <property name="intitule" type="string">
+            <column name="intitule" length="60" not-null="true" />
+        </property>
+        <property name="niveau" type="char">
+            <column name="niveau" length="1" not-null="true" />
+        </property>
+        <property name="semestre" type="string">
+            <column name="semestre" length="2" not-null="true" />
+        </property>
+        <property name="optionE" type="string">
+            <column name="option_e" length="10" not-null="true" />
+        </property>
+        <property name="actif" type="byte">
+            <column name="actif" not-null="true" />
+        </property>
+        <property name="version" type="string">
+            <column name="version" length="5" not-null="true" />
+        </property>
+        <property name="ok" type="byte">
+            <column name="OK" not-null="true" />
+        </property>
+        <property name="verrou" type="byte">
+            <column name="verrou" not-null="true" />
+        </property>
+        <property name="memo" type="string">
+            <column name="memo" length="65535" not-null="true" />
+        </property>
+        <property name="objectifs" type="string">
+            <column name="objectifs" length="1000" not-null="true" />
+        </property>
+        <property name="prerequisIndexes" type="string">
+            <column name="prerequis_indexes" length="60" not-null="true" />
+        </property>
+        <property name="prerequisTexte" type="string">
+            <column name="prerequis_texte" length="500" not-null="true" />
+        </property>
+        <property name="pedagogie" type="string">
+            <column name="pedagogie" length="800" not-null="true" />
+        </property>
+        <property name="pedagogieAlternance" type="string">
+            <column name="pedagogie_alternance" length="800" not-null="true" />
+        </property>
+        <property name="evalRemarques" type="string">
+            <column name="eval_remarques" length="200" not-null="true" />
+        </property>
+        <property name="evalRemarquesAlternance" type="string">
+            <column name="eval_remarques_alternance" length="500" not-null="true" />
+        </property>
+        <property name="bibliographie" type="string">
+            <column name="bibliographie" length="600" not-null="true" />
+        </property>
+        <property name="refDisciplines" type="string">
+            <column name="ref_disciplines" length="100" not-null="true" />
+        </property>
+        <property name="refSavoirsfaire" type="string">
+            <column name="ref_savoirsfaire" length="100" not-null="true" />
+        </property>
+        <property name="refSavoirsetre" type="string">
+            <column name="ref_savoirsetre" length="50" not-null="true" />
+        </property>
+        <property name="eadTexte" type="string">
+            <column name="EAD_texte" length="800" not-null="true" />
+        </property>
+        <property name="eadLien" type="string">
+            <column name="EAD_lien" length="150" not-null="true" />
+        </property>
+        <property name="eadNbh" type="string">
+            <column name="EAD_nbh" length="3" not-null="true" />
+        </property>
+        <property name="eadNbh2" type="string">
+            <column name="EAD_nbh_2" length="3" not-null="true" />
+        </property>
+        <property name="eadAlternanceNbh" type="string">
+            <column name="EAD_alternance_nbh" length="3" not-null="true" />
+        </property>
+        <property name="eadAlternanceNbh2" type="string">
+            <column name="EAD_alternance_nbh_2" length="3" not-null="true" />
+        </property>
+        <property name="fichierPresEns" type="string">
+            <column name="fichier_pres_ens" length="150" not-null="true" />
+        </property>
+        <property name="datePresEns" type="string">
+            <column name="date_pres_ens" length="45" not-null="true" />
+        </property>
+        <property name="nbhCours" type="string">
+            <column name="nbh_cours" length="5" not-null="true" />
+        </property>
+        <property name="nbhCours2" type="string">
+            <column name="nbh_cours_2" length="5" not-null="true" />
+        </property>
+        <property name="nbhTd" type="string">
+            <column name="nbh_td" length="5" not-null="true" />
+        </property>
+        <property name="nbhTd2" type="string">
+            <column name="nbh_td_2" length="5" not-null="true" />
+        </property>
+        <property name="nbhTp" type="string">
+            <column name="nbh_tp" length="5" not-null="true" />
+        </property>
+        <property name="nbhTp2" type="string">
+            <column name="nbh_tp_2" length="5" not-null="true" />
+        </property>
+        <property name="nbhProj" type="string">
+            <column name="nbh_proj" length="5" not-null="true" />
+        </property>
+        <property name="nbhProj2" type="string">
+            <column name="nbh_proj_2" length="5" not-null="true" />
+        </property>
+        <property name="nbhAutre" type="string">
+            <column name="nbh_autre" length="5" not-null="true" />
+        </property>
+        <property name="nbhAutre2" type="string">
+            <column name="nbh_autre_2" length="5" not-null="true" />
+        </property>
+        <property name="tdi" type="byte">
+            <column name="tdi" not-null="true" />
+        </property>
+        <property name="tpi" type="byte">
+            <column name="tpi" not-null="true" />
+        </property>
+        <property name="international" type="string">
+            <column name="international" length="400" not-null="true" />
+        </property>
+        <property name="idDescripteur1" type="string">
+            <column name="id_descripteur1" length="8" not-null="true" />
+        </property>
+        <property name="idDescripteur2" type="string">
+            <column name="id_descripteur2" length="8" not-null="true" />
+        </property>
+        <property name="idDescripteur3" type="string">
+            <column name="id_descripteur3" length="8" not-null="true" />
+        </property>
+        <property name="idRespEns" type="short">
+            <column name="id_resp_ens" not-null="true" />
+        </property>
+        <property name="idRespCours" type="int">
+            <column name="id_resp_cours" not-null="true" />
+        </property>
+        <property name="idRespTd" type="int">
+            <column name="id_resp_td" not-null="true" />
+        </property>
+        <property name="idRespTp" type="int">
+            <column name="id_resp_tp" not-null="true" />
+        </property>
+        <property name="idRespProj" type="int">
+            <column name="id_resp_proj" not-null="true" />
+        </property>
+        <property name="idRespAutre" type="int">
+            <column name="id_resp_autre" not-null="true" />
+        </property>
+        <property name="fichierPresCours" type="string">
+            <column name="fichier_pres_cours" length="150" not-null="true" />
+        </property>
+        <property name="fichierPresTd" type="string">
+            <column name="fichier_pres_td" length="150" not-null="true" />
+        </property>
+        <property name="fichierPresTp" type="string">
+            <column name="fichier_pres_tp" length="150" not-null="true" />
+        </property>
+        <property name="fichierPresProj" type="string">
+            <column name="fichier_pres_proj" length="150" not-null="true" />
+        </property>
+        <property name="fichierPresAutre" type="string">
+            <column name="fichier_pres_autre" length="150" not-null="true" />
+        </property>
+        <property name="coefCours" type="byte">
+            <column name="coef_cours" not-null="true" />
+        </property>
+        <property name="coefTd" type="byte">
+            <column name="coef_td" not-null="true" />
+        </property>
+        <property name="coefTp" type="byte">
+            <column name="coef_tp" not-null="true" />
+        </property>
+        <property name="coefProj" type="byte">
+            <column name="coef_proj" not-null="true" />
+        </property>
+        <property name="coefAutre" type="byte">
+            <column name="coef_autre" not-null="true" />
+        </property>
+        <property name="dateModif" type="string">
+            <column name="date_modif" length="30" not-null="true" />
+        </property>
+        <property name="auteurModif" type="string">
+            <column name="auteur_modif" length="40" not-null="true" />
+        </property>
+        <property name="datePresCours" type="string">
+            <column name="date_pres_cours" length="45" not-null="true" />
+        </property>
+        <property name="datePresTd" type="string">
+            <column name="date_pres_td" length="45" not-null="true" />
+        </property>
+        <property name="datePresTp" type="string">
+            <column name="date_pres_tp" length="45" not-null="true" />
+        </property>
+        <property name="datePresProj" type="string">
+            <column name="date_pres_proj" length="45" not-null="true" />
+        </property>
+        <property name="datePresAutre" type="string">
+            <column name="date_pres_autre" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 nov. 2015 11:36:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstix.dao.EtudiantsAbsences" table="etudiants_absences" catalog="abstix">
+        <id name="id" type="java.lang.Short">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idEtu" type="int">
+            <column name="id_etu" not-null="true" />
+        </property>
+        <property name="idEns" type="short">
+            <column name="id_ens" not-null="true" />
+        </property>
+        <property name="idDisci" type="short">
+            <column name="id_disci" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="10" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="ampm" type="string">
+            <column name="ampm" length="5" not-null="true" />
+        </property>
+        <property name="motif" type="string">
+            <column name="motif" length="60" not-null="true" />
+        </property>
+        <property name="justif" type="char">
+            <column name="justif" length="1" not-null="true" />
+        </property>
+        <property name="exam" type="byte">
+            <column name="exam" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
