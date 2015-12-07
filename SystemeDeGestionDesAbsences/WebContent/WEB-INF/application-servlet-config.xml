@@ -9,7 +9,7 @@
               http://www.springframework.org/schema/security 
               http://www.springframework.org/schema/security/spring-security-2.0.xsd">
 
-	<context:component-scan base-package="controller" />
+	<context:component-scan base-package="com.abstix.controller" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

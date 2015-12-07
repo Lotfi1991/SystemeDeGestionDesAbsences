@@ -1,9 +1,8 @@
 package com.abstix.services;
 
+import java.util.List;
+
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 import com.abstix.dao.Personnels;
 import com.abstix.dao.PersonnelsHome;
@@ -11,13 +10,12 @@ import com.abstix.dao.PersonnelsHome;
 public class UserAuthenticationImpl implements UserAuthentication {
 	
 	private PersonnelsHome dao;
-	private AuthenticationManager authenticationManager;
+	//private AuthenticationManager authenticationManager;
 
 
 	@Override
-	public boolean processUserLogin(Personnels p) {
-		// TODO Auto-generated method stub
-		return false;
+	public Personnels processUserLogin(String id,String pass) {	
+		return dao.autorisationDeConnexion(id,pass);
 	}
 
 
@@ -34,6 +32,26 @@ public class UserAuthenticationImpl implements UserAuthentication {
 	public Personnels getPersonnelById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+
+
+	@Override
+	public List getPersonnelByIdentifiant(String email) {
+		// TODO Auto-generated method stub
+		return dao.getByIdantifiant(email);
+	}
+
+
+
+	public PersonnelsHome getDao() {
+		return dao;
+	}
+
+
+
+	public void setDao(PersonnelsHome dao) {
+		this.dao = dao;
 	}
 
 }

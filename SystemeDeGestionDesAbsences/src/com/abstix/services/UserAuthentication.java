@@ -1,5 +1,7 @@
 package com.abstix.services;
 
+import java.util.List;
+
 import com.abstix.dao.Personnels;
 
 
@@ -16,9 +18,10 @@ public interface UserAuthentication {
 	 * @param Personnels
 	 * @return
 	 */
-	boolean processUserLogin(Personnels p);
+	Personnels processUserLogin(String id,String pass);
 	boolean processUserLogout(Personnels p);
 	
 	public Personnels getPersonnelById(Integer id);
+	public List getPersonnelByIdentifiant(String email);
 
 }

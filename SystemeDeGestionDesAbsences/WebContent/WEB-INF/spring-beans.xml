@@ -11,11 +11,12 @@
 
 
 
-	<bean class="com.abstix.dao.Inscription2Home" id="etudiantDAO"
-		init-method="init"></bean>
 
-	<bean class="com.abstix.services.EtudiantImplMetier" id="EtudiantServices">
-		<property name="dao" ref="etudiantDAO"></property>
+	
+		<bean class="com.abstix.dao.PersonnelsHome" id="PersonnelsHome" init-method="init"></bean>
+
+	<bean class="com.abstix.services.UserAuthenticationImpl" id="AuthenticationServices">
+		<property name="dao" ref="PersonnelsHome"></property>
 	</bean>
 
 

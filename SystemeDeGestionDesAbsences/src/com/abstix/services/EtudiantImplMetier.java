@@ -12,8 +12,8 @@ public class EtudiantImplMetier implements EtudiantMetier {
 
 	@Override
 	public List<Inscriptions2> getAllEtudiants() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return dao.getAllInscrit();
 	}
 
 	@Override
@@ -44,6 +44,14 @@ public class EtudiantImplMetier implements EtudiantMetier {
 	public boolean GoToPopUp() {
 		// TODO Auto-generated method stub
 		return false;
+	}
+
+	public Inscriptions2Home getDao() {
+		return dao;
+	}
+
+	public void setDao(Inscriptions2Home dao) {
+		this.dao = dao;
 	}
 
 
